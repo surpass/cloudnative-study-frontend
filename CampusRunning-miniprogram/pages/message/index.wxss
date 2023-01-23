@@ -1,0 +1,48 @@
+/**index.wxss**/.ellipsis {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: block;
+}
+.fold__panel{	padding-left: 15px;padding-right: 15px;}
+.fold__items{
+	background: #FFFFFF;
+	box-shadow: -6px 0px 29px 0px #E7E7E7;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	padding: 15px;
+}
+.fold__item--head{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.fold__item--head .fold__head--l{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 92%;
+}
+.fold__item--head .fold__head--l .fold__head--tag{
+	padding: 2px 10px;
+	margin-right: 5px;
+	color: #fff;
+	font-size: 12px;
+	background-color: #FD613B;
+	border-radius: 0 5px 0 5px;
+}
+.fold__item--head .fold__head--l .fold__head--title{font-size: 16px;color: #333;width: 50%;}
+.fold__item--head .fold__head--r{
+	flex-basis: 50rpx;
+	transition: all 0.4s;
+}
+.fold__item--head .fold__head--r.on{
+	transform: rotate(-180deg);
+}
+
+.fold__item--content{
+	margin-top: 15px;
+	transition: all 0.4s;
+}

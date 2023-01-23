@@ -1,0 +1,21 @@
+
+<!-- 用户协议 -->
+  <view class="mask" catchtouchmove='true' hidden="{{hidem==1}}"></view>
+  <view class="model_box" hidden="{{hidem==1}}">
+      <view class="mb-tit">校园生活助手用户协议</view>
+      <view class="mb-content">
+          <view class="mb-con">尊敬的用户您好！</view>
+          <view class="mb-con">校园生活助手应用（以下简称生活助手）是一款跑步运动及生活助手工具小程序）为广大用户提供便捷功能，有记录跑步运动，生活助手等功能。
+          </view>           
+          <view class="mb-con">位置记录：当您使用生活助手的跑步运动功能时本工具会记录你的运动轨迹，位置信息以加密的方式记录。</view>
+          <view class="mb-con">协议生效：您完成注册程序或使用第三方账号登录生活助手，使用生活助手服务，即视为您已充分阅读、理解及同意本协议，协议即时生效，对本应用各方均具有约束力。</view>
+      </view>
+      <view class="checkbox">
+        <!-- <view class="qx" bindtap="qx">取消</view> -->
+        <view class="qr">
+          <view style="font-size:22rpx;position:absolute;left:5%;display:flex;align-items:center;"><checkbox value="cb" checked="" bindtap="cb"/>勾选代表同意本协议的相关规定</view>
+          <view bindtap="qx2" style="margin-right: 20rpx;">取消</view>
+          <view bindtap="qr" style="padding: 10rpx;">确认</view>
+        </view>
+      </view>
+  </view>

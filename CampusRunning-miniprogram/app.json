@@ -1,0 +1,125 @@
+{
+    "pages": [
+      "pages/agreement/agreement",
+      "pages/login/login",
+      "pages/home/index",
+        "pages/index/index",
+        "pages/history/index",
+        "pages/message/index",
+        "pages/me/index",
+        "pages/contact/index",
+        "pages/sportdata/list",
+        "pages/map/map",
+        "pages/ranking/ranking",
+        "pages/tripdetail/detail",
+        "pages/tools/index",
+        "pages/my_module/get_image/index",
+    "pages/my_module/flag/index",
+    "pages/my_module/forbes/index",
+    "pages/my_module/eat/index",
+    "pages/my_module/eat/edit_eat",
+    "pages/my_module/money/index",
+    "pages/my_module/qh/index",
+    "pages/my_module/calc_relative/index",
+    "pages/my_module/calc/index",
+    "pages/my_module/calc_mortgage/index",
+    "pages/my_module/calc_mortgage/detail",
+    "pages/my_module/bmi/bmi",
+    "pages/my_module/bigWheel/bigWheel",
+    "pages/my_module/bigWheel/bigWheelSetting/bigWheelSetting",
+    "pages/my_module/bigWheel/chooseItem/chooseItem",
+    "pages/my_module/bigWheel/edit/edit",
+    "pages/my_module/2048/2048",
+    "pages/my_module/screenshotConnect/screenshotConnect",
+    "pages/my_module/screenshotConnect/showImage",
+    "pages/my_module/danmu/danmu",
+    "pages/my_module/danmu/show_danmu",
+    "pages/my_module/ruler/ruler",
+    "pages/my_module/cuttingNine/cuttingNine",
+    "pages/my_module/createQrcode/createQrcode",
+    "pages/my_module/scanQrcode/scanQrcode",
+    "pages/my_module/calc_size/index",
+    "pages/my_module/ip_info/index",
+    "pages/my_module/count_money/money",
+    "pages/my_module/blood/blood",
+    "pages/my_module/zhendong/index",
+    "pages/my_module/life_time/life_time",
+    "pages/my_module/eglfq/index",
+    "pages/my_module/blind/blind",
+    "pages/my_module/clock/clock",
+    "pages/my_module/countDown/countDown",
+    "pages/my_module/timejs/add",
+    "pages/my_module/timejs/detail",
+    "pages/my_module/timejs/index",
+    "pages/my_module/randomNum/randomNum",
+    "pages/my_module/phone/phone",
+    "pages/my_module/protractor/protractor",
+    "pages/my_module/networkSpeed/networkSpeed",
+    "pages/my_module/yueyu/index",
+    "pages/my_module/quse/color",
+    "pages/my_module/quse/detail",
+    "pages/my_module/quse/index",
+    "pages/my_module/crypt/crypt",
+    "pages/my_module/crypt/decrypt"
+    ],
+    "requiredBackgroundModes": ["location"],
+    "requiredPrivateInfos": [
+      "getLocation",
+      "onLocationChange",
+      "startLocationUpdate",
+      "startLocationUpdateBackground"
+    ],
+    "permission": {
+      "scope.userLocation": {
+        "desc": "你的位置信息将用于小程序位置接口的效果展示"
+      }
+    },
+    
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#2b4b6b",
+        "navigationBarTitleText": "校园生活助手",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": true,
+        "backgroundColor": "#efefef",
+        "onReachBottomDistance": 100
+    },
+    "tabBar": {
+      "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home-active.png"
+      }
+      ,
+      {
+        "pagePath": "pages/history/index",
+        "text": "运动历史",
+        "iconPath": "/images/link-01.png",
+        "selectedIconPath": "/images/link-02.png"       
+      },
+      {
+        "pagePath": "pages/ranking/ranking",
+        "text": "排名",
+        "iconPath": "/images/ranking.png",
+        "selectedIconPath": "/images/ranking-active.png"    
+        
+      },
+      {
+        "pagePath": "pages/message/index",
+        "text": "消息中心",
+        "iconPath": "/images/message.png",
+        "selectedIconPath": "/images/message-active.png"     
+      },
+      {
+        "pagePath": "pages/me/index",
+        "text": "我",
+        "iconPath": "/images/me.png",
+        "selectedIconPath": "/images/me-active.png"     
+      }
+    ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

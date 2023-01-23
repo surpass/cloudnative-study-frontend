@@ -1,0 +1,21 @@
+/* pages/sportdata/list.wxss */
+
+.data-item {
+  display: flex;
+  padding: 15rpx;
+  border: 1rpx solid #efefef;
+  border-radius: 8rpx;
+  margin: 15rpx;
+  box-shadow: 1rpx 1rps 15rpx #ddd;
+}
+ 
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 24rpx;
+}
+
+.item-title {
+  font-weight: hold;
+}

@@ -1,0 +1,14 @@
+<!--pages/map/map.wxml-->
+<map class="silder" id="map" 
+longitude="{{longitude}}" latitude="{{latitude}}"
+markers="{{markers}}"
+scale="{{scale}}"
+polyline="{{polyline}}"
+setting="{{mapSettings}}" bindregionchange="updatedMap">
+ 
+  <view class="weizhixuan_box flex column">
+    <view class="itme flex acenter" catchtap="weizhiXinxi" data-idx="0"><!--起点：{{markers[0].longitude}};{{markers[0].latitude}}-->高速:{{maxSpeed}},平均速:{{avgeSpeed*1000}}米/秒</view>
+    <view class="itme flex acenter" catchtap="weizhiXinxi" data-idx="1"><!--终点：{{markers[1].longitude}};{{markers[1].latitude}}-->距离:{{runDistance}}m,时长:{{runtime/1000}}秒</view>
+  </view> 
+ 
+</map>

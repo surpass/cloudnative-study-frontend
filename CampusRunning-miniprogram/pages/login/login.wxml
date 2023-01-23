@@ -1,0 +1,31 @@
+  <view wx:if="{{isHide}}">
+    <view wx:if="{{canIUse}}" >
+        <view class='header'>
+            <image src='/images/weixin.png'></image>
+        </view>
+<view class='binding-item'>
+	<view>联系电话</view>
+	<input placeholder="请输入您的手机号码" value="{{mobile}}" bindinput="inputMobile"></input>
+</view> 
+<view class='binding-item'>
+	<view>学    号</view>
+	<input placeholder="请输入您的学号" value="{{studentCode}}" 
+  bindinput="inputStudentCode"></input>
+</view> 
+<view class='binding-item'>
+	<view>真实姓名</view>
+	<input placeholder="请输入您的真实姓名" value="{{realName}}" bindinput="inputRealName"></input>
+</view>
+
+        <view class='content'>
+            <view>申请获取以下权限</view>
+            <text>获得你的公开信息(昵称，头像等)</text>
+        </view>
+        <!-- open-type='getPhoneNumber'  -->
+        <button class='bottom' type='primary' bindtap="login" lang="zh_CN">
+            授权登录
+        </button>
+        <!-- <view bindtap="login">授权登录</view> -->
+    </view>
+    <view wx:else>请升级微信版本</view>
+</view>

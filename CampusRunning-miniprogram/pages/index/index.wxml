@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view>title</view>
+<view>
+map 
+</view>
+<view>下一个打卡点:</view>
+<view>speed: time:</view>

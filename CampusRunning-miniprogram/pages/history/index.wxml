@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view wx:for="{{dataList}}" wx:key="index" class="num-item"
+style="background-color:rgba({{item}})">{{item}}</view>
+
+<view class="data-item" wx:for="{{dataLists}}" wx:key="id">
+  <navigator url="/pages/tripdetail/detail?tripId={{item.id}}&lon={{item.flon}}&lat={{item.flat}}">
+  <view class="info">   
+      <text>开始:{{item.fromDate}}</text>
+      <text>结束:{{item.thruDate}}</text>
+      <text>距离:{{item.distance}}米</text>
+      <text>时长:{{item.runTime/1000}}秒</text>
+      <text>最高速度:{{item.maxSpeed}}</text>
+      <text>平均速度:{{item.avgeSpeed}}米/秒</text>
+    
+  </view>
+</navigator>
+</view>
+

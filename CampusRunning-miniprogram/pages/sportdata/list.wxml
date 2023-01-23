@@ -1,0 +1,12 @@
+<!--pages/sportdata/list.wxml-->
+<view class="data-item" wx:for="{{dataLists}}" wx:key="id">
+  <view class="thumb">
+    <image src="{{item.images[0]}}"></image>
+  </view>
+  <view class="info">
+    <text class="item-title">{{item.name}}</text>
+    <text>TEL:{{item.phone}}</text>
+    <text>ADD:{{item.address}}</text>
+    <text>TIM:{{item.businessHours}}</text>
+  </view>
+</view>

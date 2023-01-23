@@ -1,0 +1,42 @@
+map{
+  height: 100vh;
+  width: 100vw;
+}
+
+.btn{
+  width: 280rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  margin: 40rpx auto;
+  border: 2rpx solid #e41749;
+  color: #e41749;
+  border-radius: 20rpx;
+  top:800rpx;
+  bottom:100rpx;
+}
+
+.map_box {
+  width: 100%;
+  height: 600rpx;
+}
+ 
+.map_box #myMap {
+  width: 100%;
+  height: 100%;
+}
+ 
+.weizhixuan_box {
+  margin: 20rpx;
+}
+ 
+.weizhixuan_box .itme {
+  height: 80rpx;
+}
+ 
+.weizhixuan_box .annui {
+  background-color: #f00;
+  color: #fff;
+  height: 100rpx;
+  margin-top: 20rpx;
+}

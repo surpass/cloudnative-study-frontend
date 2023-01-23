@@ -1,0 +1,20 @@
+<view class="fold__panel">
+	<block wx:for="{{dataList}}" wx:key="LMF_ID" wx:for-item="dataInfo" wx:for-index="dataIndex">
+		<view class="fold__items" data-index="{{dataIndex}}" catchtap="listDataClick">
+			<!-- 标题 -->
+			<view class="fold__item--head">
+				<view class="fold__head--l">
+					<text class="fold__head--tag">类别</text>
+					<text class="fold__head--title ellipsis">标题</text>
+				</view>
+				<view class="fold__head--r {{showIndex==dataIndex?'on':''}}">
+					<i-icon type="arrow-down" size="24" color="#EBEBEB" />
+				</view>
+			</view>
+			<!-- 展开内容 -->
+			<view wx:if="{{showIndex==dataIndex}}" class="fold__item--content">
+		消息内容
+			</view>
+		</view>
+	</block>
+</view>

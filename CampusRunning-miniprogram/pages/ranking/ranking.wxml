@@ -1,0 +1,26 @@
+
+<picker bindchange="bindViewEvent" data-model="component" data-method="bindSelect" data-name="index" value='{{index}}' range="{{type}}">
+  <view class="label-right">
+    {{type[index]}}
+  </view>
+</picker>
+<picker bindchange="bindViewEvent" data-model="component" bindcolumnchange="bindcolumnchange" data-name="index" value='{{index}}' range="{{timeCycle}}">
+  <view class="label-right">
+    {{timeCycle[index]}}
+  </view>
+</picker>
+
+
+<!--index.wxml-->
+<view class="data-item" wx:for="{{dataList}}" wx:key="id">
+  <view class="thumb">
+    <image src="{{item.avatar_url}}"></image>
+  </view>
+  <view class="info">
+    <text>姓名：{{item.sname}}</text>
+    <text>跑步距离:{{item.distance}}</text>
+    <text>跑步时长:{{item.runTime}}</text>
+    <text>第 {{item.rankNo}} 名</text>
+  </view>
+</view>
+ 
